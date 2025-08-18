@@ -1,8 +1,7 @@
 
-````markdown
-# 🤖 MoE Research Agent
+# 🤖 LLM Paper Analyzer
 
-This project is an advanced AI agent designed to perform Retrieval-Augmented Generation (RAG) on a specialized knowledge base of research papers about Mixture of Experts (MoE) models.
+This project is an advanced AI agent designed to perform Retrieval-Augmented Generation (RAG) on a specialized knowledge base of technical documents, such as AI and LLM research papers.
 
 The agent uses an agentic workflow built with **LangGraph** to not only answer questions but to first critically evaluate the relevance of the retrieved information. This self-correction mechanism allows the agent to avoid hallucination and refuse to answer when the context is insufficient, making it a more robust and reliable system.
 
@@ -53,8 +52,8 @@ Follow these instructions to set up and run the project locally.
 ### 2\. Clone the Repository
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
+git clone https://github.com/mohan120105/llm-paper-analyzer
+cd llm-paper-analyzer
 ```
 
 ### 3\. Set Up the Environment
@@ -123,7 +122,7 @@ The agent demonstrates its ability to handle both relevant and irrelevant questi
 --- RUNNING WITH RELEVANT QUESTION ---
 ...
 FINAL GENERATION:
-The role of the gating network in a Mixture of Experts (MoE) model is to produce a sparse n-dimensional vector that determines which expert networks to use for a given input.
+The primary methodology discussed is a new neural network architecture that improves computational efficiency by using a sparse gating mechanism to activate only a subset of model parameters for any given input.
 ```
 
 ### Irrelevant Question
