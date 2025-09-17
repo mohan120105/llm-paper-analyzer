@@ -41,7 +41,7 @@ def create_rag_chain():
     # Initialize the LLM
     llm = ChatGroq(model_name="llama3-8b-8192", temperature=0)
 
-    # Load the embedding model (must be the same as in ingest.py)
+    # Load the embedding model 
     model_name = "BAAI/bge-small-en-v1.5"
     model_kwargs = {'device': 'cpu'}
     encode_kwargs = {'normalize_embeddings': True}
